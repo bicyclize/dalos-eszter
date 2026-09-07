@@ -1,8 +1,7 @@
 # Dalos Eszter — mediáció · coaching · konzultáció
 
 Egyoldalas weboldal Eszter Dalos segítői praxisának: mediáció, coaching, egyéni konzultáció.
-A design a bedeanna.com letisztult, meleg szerkesztői stílusát követi; tartalom és képek
-a zagonidalos.squarespace.com alapján.
+
 
 ## Futtatás
 
