@@ -22,6 +22,8 @@ erre a címre — amíg azt nem erősítik meg, az üzenetek nem érkeznek meg.
 ## Deploy (GitHub Pages)
 
 ```bash
-gh repo create zagoni-dalos --public --source=. --push
-gh api repos/bicyclize/zagoni-dalos/pages -f build_type=legacy -f source[branch]=main -f source[path]=/
+gh repo create dalos-eszter --public --source=. --push
+gh api repos/bicyclize/dalos-eszter/pages -f build_type=legacy -f source[branch]=main -f source[path]=/
 ```
+
+Éles URL: https://bicyclize.github.io/dalos-eszter/

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zágoni és Dalos — mediáció · coaching · konzultáció</title>
-<meta name="description" content="Képzett szakemberekből álló csapatunkkal minőségi segítő szolgáltatást nyújtunk: mediáció, vezetői coaching, life coaching és pszichoterápia Budapesten, a Széll Kálmán térnél.">
+<title>Dalos Eszter — mediáció · coaching · konzultáció</title>
+<meta name="description" content="Dalos Eszter képzett segítő szakember: egyéni konzultáció, coaching és mediáció Budapesten, a Széll Kálmán tér közelében. Igazságügyi Minisztérium által bejegyzett közvetítő.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Almarai:wght@300;400;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
@@ -54,7 +54,12 @@
     gap: 20px;
   }
   .brand{ display:flex; align-items:center; gap:12px; }
-  .brand img{ width:46px; height:46px; border-radius:50%; object-fit:cover; }
+  .brand img, .brand .monogram{ width:46px; height:46px; border-radius:50%; object-fit:cover; flex:none; }
+  .brand .monogram{
+    display:flex; align-items:center; justify-content:center;
+    background: var(--accent); color:#fff;
+    font-family: var(--serif); font-size: 1.45rem;
+  }
   .brand-name{
     font-family: var(--display); font-weight: 500; font-size: 1.22rem;
     letter-spacing: .02em; line-height: 1.1;
@@ -466,8 +471,8 @@
 <header>
   <div class="header-inner">
     <a href="#top" class="brand">
-      <img src="img/logo.png" alt="Zágoni és Dalos logó">
-      <span class="brand-name">Zágoni és Dalos<small>mediáció · coaching · konzultáció</small></span>
+      <span class="monogram" aria-hidden="true">D</span>
+      <span class="brand-name">Dalos Eszter<small>mediáció · coaching · konzultáció</small></span>
     </a>
     <nav class="desktop">
       <a href="#szemlelet">Szemléletünk</a>
@@ -493,9 +498,9 @@
 <div class="hero" id="top">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Zágoni és Dalos · Budapest</div>
+    <div class="hero-eyebrow">Dalos Eszter · Budapest</div>
     <h1>biztonság. <em>figyelem.</em> megoldás.</h1>
-    <p>Képzett szakemberekből álló csapatunkkal minőségi segítő szolgáltatást nyújtunk. Szakmai kollektívaként mediációval, vezetői coachinggal, life coachinggal és pszichoterápiával segítjük a hozzánk fordulókat.</p>
+    <p>Képzett segítő szakemberként minőségi támogatást nyújtok: mediációval, coachinggal és egyéni konzultációval segítem a hozzám fordulókat.</p>
     <a href="#szemlelet" class="btn btn-light">A szemléletünk</a>
     <a href="#kapcsolat" class="btn btn-outline" style="border-color:#fff;color:#fff;">Időpontfoglalás</a>
   </div>
@@ -507,7 +512,7 @@
     <div class="section-head">
       <div class="kicker">A szemléletünk</div>
       <h2>Azt szeretnénk, hogy megkapja<br>a <em style="font-style:italic;">megérdemelt figyelmet</em>.</h2>
-      <p class="sub">Ügyfeleink személyre szabott javaslatokat kapnak arra vonatkozóan, hogy a csapatunkból ki a legmegfelelőbb segítő a számukra. Rendszerünk a pácienseink igényeihez igazodik.</p>
+      <p class="sub">Eszter ítélkezés nélkül hallgatja meg a hozzá fordulókat, és a számukra legjobb döntések meghozatalában kíséri őket.</p>
     </div>
     <div class="about-grid">
       <div class="about-img">
@@ -515,9 +520,7 @@
       </div>
       <div class="about-text">
         <h3>A mentális egészség szolgálatában</h3>
-        <p>Képzett szakemberekből álló csapatunkkal minőségi segítő szolgáltatást nyújtunk. Szakmai kollektívaként kísérő támogatással, mediációval, coachinggal és pszichoterápiával segítjük a hozzánk fordulókat.</p>
-        <p class="lead">„Mindenkiben ott rejlik a maga nehézségének a megoldása.”</p>
-        <div class="meta">— Zágoni Nóra, mediátor és coach</div>
+        <p>Dalos Eszter képzett segítő szakember: kísérő támogatással, mediációval, coachinggal és egyéni konzultációval segíti a hozzá fordulókat. Igazságügyi Minisztérium által bejegyzett közvetítő.</p>
       </div>
     </div>
   </div>
@@ -557,7 +560,7 @@
         <div class="svc-body">
           <div class="svc-tag">Egyéni konzultáció</div>
           <h3>Konzultáció</h3>
-          <p>A személyes találkozók során az ügyfelek feltárják és feldolgozzák problémáikat. A legkilátástalanabb helyzetben is segít, ha új megközelítésből tekintünk a problémánkra — képzett szakembereink segítségével túljuthat az elakadt helyzeten.</p>
+          <p>A személyes találkozók során az ügyfelek feltárják és feldolgozzák problémáikat. A legkilátástalanabb helyzetben is segít, ha új megközelítésből tekintünk a problémánkra — képzett szakember segítségével túljuthat az elakadt helyzeten.</p>
           <div class="svc-price"><span>50 perc · heti rendszeresség</span><strong>20.000 Ft</strong></div>
         </div>
       </article>
@@ -600,12 +603,12 @@
       <div class="step">
         <span class="num">02.</span>
         <h3>Személyre szabott javaslatok</h3>
-        <p>Megbeszéljük, hogy csapatunkból ki felel meg a legjobban az Ön igényeinek és preferenciáinak.</p>
+        <p>Megbeszéljük, hogy milyen formában tudjuk a legjobban támogatni az Ön igényeit és preferenciáit.</p>
       </div>
       <div class="step">
         <span class="num">03.</span>
-        <h3>Válasszon megfelelő szakembert</h3>
-        <p>A találkozást megelőző telefonos konzultáció segít abban, hogy az Önnek megfelelő szakemberrel kezdjék el a közös munkát.</p>
+        <h3>Válassza a megfelelő kereteket</h3>
+        <p>A találkozást megelőző telefonos konzultáció segít abban, hogy a közös munkát a megfelelő keretek között kezdjük el.</p>
       </div>
     </div>
   </div>
@@ -659,7 +662,7 @@
     <div class="section-head">
       <div class="kicker">Kapcsolat</div>
       <h2>Forduljon segítségért, <em style="font-style:italic;">még ma!</em></h2>
-      <p class="sub">Írjon nekünk bizalommal, vagy hívjon minket — közösen megtaláljuk az Önnek megfelelő támogatást.</p>
+      <p class="sub">Írjon bizalommal, vagy hívjon — közösen megtaláljuk az Önnek megfelelő támogatást.</p>
     </div>
     <div class="contact-grid">
       <div class="contact-info">
@@ -692,10 +695,10 @@
           <textarea id="f-msg" name="message" required placeholder="Mi az, amiben segítségre lenne szüksége?"></textarea>
         </div>
         <button type="submit" class="btn btn-solid" style="width:100%;">Elküld</button>
-        <p class="form-note">Üzenetét bizalmasan kezeljük, és hamarosan felvesszük Önnel a kapcsolatot.</p>
+        <p class="form-note">Üzenetét bizalmasan kezelem, és hamarosan felveszem Önnel a kapcsolatot.</p>
         <div class="form-success" id="formSuccess">
           <span class="tick">✓</span>
-          Köszönjük üzenetét! Hamarosan jelentkezünk.
+          Köszönöm üzenetét! Hamarosan jelentkezem.
         </div>
       </form>
     </div>
@@ -713,8 +716,8 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <span class="brand-name">Zágoni és Dalos<small style="color:rgba(237,231,222,.6);">mediáció · coaching · konzultáció</small></span>
-      <p>Képzett szakemberekből álló csapatunkkal minőségi segítő szolgáltatást nyújtunk Budapesten.</p>
+      <span class="brand-name">Dalos Eszter<small style="color:rgba(237,231,222,.6);">mediáció · coaching · konzultáció</small></span>
+      <p>Dalos Eszter mediátor, coach és konzultációs szakember — Budapest, a Széll Kálmán tér közelében.</p>
     </div>
     <div class="footer-col">
       <h4>Menü</h4>
@@ -732,7 +735,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© <span id="year"></span> Zágoni és Dalos. Minden jog fenntartva.</span>
+    <span>© <span id="year"></span> Dalos Eszter. Minden jog fenntartva.</span>
     <span><a href="#" style="opacity:.8;">GDPR</a> · <a href="#" style="opacity:.8;">Impresszum</a></span>
   </div>
 </footer>
@@ -749,7 +752,7 @@
     btn.textContent = 'Küldés…';
 
     var data = new FormData(form);
-    data.append('_subject', 'Új üzenet a weboldalról — Zágoni és Dalos');
+    data.append('_subject', 'Új üzenet a weboldalról — Dalos Eszter');
     data.append('_template', 'table');
     data.append('_captcha', 'false');
 
