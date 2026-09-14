@@ -221,8 +221,8 @@
     gap: 28px;
   }
   .svc-card{
-    background: var(--white);
-    border: 1px solid var(--line);
+    background: var(--slate);
+    border: 1px solid rgba(255,255,255,.18);
     border-radius: 18px;
     overflow:hidden;
     display:flex; flex-direction:column;
@@ -230,29 +230,41 @@
   }
   .svc-card:hover{
     transform: translateY(-5px);
-    box-shadow: 0 24px 50px -30px rgba(43,38,34,.35);
+    box-shadow: 0 24px 50px -30px rgba(47,79,79,.45);
   }
-  .svc-card .img{ aspect-ratio: 16/9; overflow:hidden; }
-  .svc-card .img img{ width:100%; height:100%; object-fit:cover; transition: transform .4s; }
-  .svc-card:hover .img img{ transform: scale(1.04); }
-  .svc-body{ padding: 30px 28px 32px; display:flex; flex-direction:column; flex:1; }
+  .svc-card .img{
+    display:flex; align-items:center; justify-content:center;
+    padding: 40px 30px 8px;
+  }
+  .svc-card .img img{
+    width: 170px; max-width: 70%;
+    height: auto;
+    transition: transform .4s;
+  }
+  .svc-card:hover .img img{ transform: scale(1.05); }
+  .svc-body{ padding: 22px 28px 32px; display:flex; flex-direction:column; flex:1; }
   .svc-body .svc-tag{
     font-size:.68rem; letter-spacing:.24em; text-transform:uppercase;
-    color: var(--accent); margin-bottom: 10px;
+    color: rgba(255,255,255,.8); margin-bottom: 10px;
   }
   .svc-body h3{
     font-family: var(--display); font-weight: 500; font-size: 1.45rem;
-    margin-bottom: 12px;
+    margin-bottom: 12px; color: #FFFFFF;
   }
-  .svc-body p{ font-size: .96rem; color: #4E5E5C; margin-bottom: 18px; flex:1; }
+  .svc-body p{ font-size: .96rem; color: rgba(255,255,255,.92); margin-bottom: 18px; flex:1; }
   .svc-price{
     display:flex; align-items:center; justify-content: space-between;
-    border-top: 1px solid var(--line); padding-top: 16px;
-    font-size: .84rem; color: var(--muted);
+    border-top: 1px solid rgba(255,255,255,.25); padding-top: 16px;
+    font-size: .84rem; color: rgba(255,255,255,.85);
   }
   .svc-price strong{
     font-family: var(--display); font-weight: 500; font-size: 1.1rem;
-    color: var(--ink); letter-spacing: .02em;
+    color: #FFFFFF; letter-spacing: .02em;
+  }
+  .svc-btn{
+    margin-top: 22px;
+    width: 100%;
+    text-align: center;
   }
 
   /* ---------- Szemlélet / lépések ---------- */
@@ -558,6 +570,7 @@
           <h3>Konzultáció</h3>
           <p>A személyes találkozók során az ügyfelek feltárják és feldolgozzák problémáikat. A legkilátástalanabb helyzetben is segít, ha új megközelítésből tekintünk a problémánkra — képzett szakember segítségével túljuthat az elakadt helyzeten.</p>
           <div class="svc-price"><span>50 perc</span><strong>20.000 Ft</strong></div>
+          <a href="#kapcsolat" class="btn btn-accent svc-btn">Foglaljon időpontot!</a>
         </div>
       </article>
       <article class="svc-card">
@@ -567,6 +580,7 @@
           <h3>Coaching</h3>
           <p>Ha változtatni akar, ha döntés előtt áll — a coaching rövid távú, hatékony, változásra fókuszáló folyamat. Segít megtalálni, mi a legfontosabb Önnek, és közösen tervet kidolgozni személyes és szakmai céljai eléréséhez.</p>
           <div class="svc-price"><span>50 perc</span><strong>30.000 Ft</strong></div>
+          <a href="#kapcsolat" class="btn btn-accent svc-btn">Foglaljon időpontot!</a>
         </div>
       </article>
       <article class="svc-card">
@@ -576,6 +590,7 @@
           <h3>Mediáció</h3>
           <p>Speciális konfliktuskezelő módszer, amelynek során a felek biztonságos közegben közösen találnak megoldást a problémáikra. A független mediátor segíti a békés megoldások kidolgozását, a lezárásként a felek közösen megállapodást kötnek.</p>
           <div class="svc-price"><span>60 perc</span><strong>25.000 Ft</strong></div>
+          <a href="#kapcsolat" class="btn btn-accent svc-btn">Foglaljon időpontot!</a>
         </div>
       </article>
     </div>
