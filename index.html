@@ -10,14 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Almarai:wght@300;400;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:        #FAF7F2;
-    --bg-soft:   #F2ECE2;
-    --bg-deep:   #2E2923;
-    --ink:       #2B2622;
-    --muted:     #7C7166;
-    --line:      rgba(43,38,34,.14);
-    --accent:    #A9795B;
-    --accent-deep:#8F5F43;
+    --bg:        #F2F2F2;
+    --bg-soft:   #E0DCD5;
+    --bg-deep:   #2F4F4F;
+    --ink:       #3A5A5A;
+    --muted:     #6F8181;
+    --line:      rgba(58,90,90,.16);
+    --accent:    #D4A99A;
+    --accent-deep:#C08F7E;
+    --slate:     #8FAAB0;
     --white:     #FFFFFF;
     --serif: 'Libre Baskerville', Georgia, serif;
     --sans: 'Almarai', 'Helvetica Neue', Arial, sans-serif;
@@ -57,7 +58,7 @@
   .brand img, .brand .monogram{ width:46px; height:46px; border-radius:50%; object-fit:cover; flex:none; }
   .brand .monogram{
     display:flex; align-items:center; justify-content:center;
-    background: var(--accent); color:#fff;
+    background: var(--slate); color:#fff;
     font-family: var(--serif); font-size: 1.45rem;
   }
   .brand-name{
@@ -90,7 +91,7 @@
   .btn-outline:hover{ background: var(--ink); color: var(--bg); }
   .btn-light{ background: var(--bg); color: var(--ink); }
   .btn-light:hover{ background: #fff; }
-  .btn-accent{ background: var(--accent); color:#fff; }
+  .btn-accent{ background: var(--accent); color: var(--bg-deep); }
   .btn-accent:hover{ background: var(--accent-deep); }
 
   .burger{ display:none; background:none; border:none; cursor:pointer; padding:8px; }
@@ -124,7 +125,7 @@
   }
   .hero::after{
     content:""; position:absolute; inset:0;
-    background: linear-gradient(180deg, rgba(20,17,13,.30) 0%, rgba(20,17,13,.15) 45%, rgba(20,17,13,.55) 100%);
+    background: linear-gradient(180deg, rgba(23,34,34,.35) 0%, rgba(23,34,34,.18) 45%, rgba(23,34,34,.58) 100%);
   }
   .hero-content{
     position:relative; z-index:2;
@@ -210,7 +211,7 @@
     font-size: 1.05rem; line-height: 1.75;
     border-left: 2px solid var(--accent);
     padding-left: 22px; margin: 22px 0;
-    color: #4A423A;
+    color: #4E5E5C;
   }
 
   /* ---------- Szolgáltatások ---------- */
@@ -243,7 +244,7 @@
     font-family: var(--display); font-weight: 500; font-size: 1.45rem;
     margin-bottom: 12px;
   }
-  .svc-body p{ font-size: .96rem; color: #4A423A; margin-bottom: 18px; flex:1; }
+  .svc-body p{ font-size: .96rem; color: #4E5E5C; margin-bottom: 18px; flex:1; }
   .svc-price{
     display:flex; align-items:center; justify-content: space-between;
     border-top: 1px solid var(--line); padding-top: 16px;
@@ -255,9 +256,9 @@
   }
 
   /* ---------- Szemlélet / lépések ---------- */
-  .steps{ background: var(--bg-deep); color: #EDE7DE; }
-  .steps .section-head h2{ color: #F5F0E9; }
-  .steps .section-head .sub{ color: rgba(237,231,222,.7); }
+  .steps{ background: var(--bg-deep); color: #E6ECE9; }
+  .steps .section-head h2{ color: #F0F4F2; }
+  .steps .section-head .sub{ color: rgba(230,236,233,.72); }
   .steps-grid{
     display:grid; grid-template-columns: repeat(3, 1fr);
     gap: 28px;
@@ -276,9 +277,9 @@
   }
   .step h3{
     font-family: var(--display); font-weight: 500; font-size: 1.3rem;
-    margin-bottom: 10px; color:#F5F0E9;
+    margin-bottom: 10px; color:#F0F4F2;
   }
-  .step p{ font-size: .95rem; color: rgba(237,231,222,.78); }
+  .step p{ font-size: .95rem; color: rgba(230,236,233,.8); }
 
   /* ---------- Csapat ---------- */
   .team-grid{
@@ -342,7 +343,7 @@
     font-family: var(--display); font-weight: 400; font-size: 1.6rem;
     margin-bottom: 22px; line-height: 1.25;
   }
-  .contact-info p{ margin-bottom: 14px; color: #4A423A; }
+  .contact-info p{ margin-bottom: 14px; color: #4E5E5C; }
   .contact-info a:hover{ text-decoration: underline; }
   .contact-row{
     display:flex; gap: 14px; align-items:baseline;
@@ -411,7 +412,7 @@
   /* ---------- Footer ---------- */
   footer{
     background: var(--bg-deep);
-    color: rgba(237,231,222,.75);
+    color: rgba(230,236,233,.78);
     padding: 56px 28px 40px;
     font-size: .86rem;
   }
@@ -421,14 +422,14 @@
     justify-content: space-between; align-items:flex-start;
   }
   .footer-brand{ max-width: 320px; }
-  .footer-brand .brand-name{ color: #F5F0E9; }
-  .footer-brand p{ margin-top: 10px; font-size:.84rem; color: rgba(237,231,222,.6); }
+  .footer-brand .brand-name{ color: #F0F4F2; }
+  .footer-brand p{ margin-top: 10px; font-size:.84rem; color: rgba(230,236,233,.62); }
   .footer-col h4{
     font-size:.7rem; letter-spacing:.24em; text-transform:uppercase;
-    color: #F5F0E9; margin-bottom: 14px; font-weight: 400;
+    color: #F0F4F2; margin-bottom: 14px; font-weight: 400;
   }
   .footer-col a{
-    display:block; margin-bottom: 9px; color: rgba(237,231,222,.75);
+    display:block; margin-bottom: 9px; color: rgba(230,236,233,.78);
     transition: color .2s;
   }
   .footer-col a:hover{ color: #fff; }
@@ -437,7 +438,7 @@
     border-top: 1px solid rgba(255,255,255,.12);
     padding-top: 22px;
     display:flex; justify-content:space-between; flex-wrap:wrap; gap: 10px;
-    font-size: .76rem; color: rgba(237,231,222,.5);
+    font-size: .76rem; color: rgba(230,236,233,.5);
   }
 
   /* ---------- Responsive ---------- */
@@ -668,7 +669,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <span class="brand-name">Dalos Eszter<small style="color:rgba(237,231,222,.6);">Mentálhigiénés tanácsadás · Egyéni konzultáció · Mediáció</small></span>
+      <span class="brand-name">Dalos Eszter<small style="color:rgba(230,236,233,.6);">Mentálhigiénés tanácsadás · Egyéni konzultáció · Mediáció</small></span>
       <p>Dalos Eszter mentálhigiénés szakember, mediátor</p>
     </div>
     <div class="footer-col">
