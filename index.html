@@ -70,11 +70,11 @@
     color: var(--muted);
   }
   nav.desktop{ display:flex; align-items:center; gap: 26px; }
-  nav.desktop a{
+  nav.desktop a:not(.btn){
     font-size: .82rem; letter-spacing: .14em; text-transform: uppercase;
     color: var(--ink); opacity: .8; transition: opacity .2s;
   }
-  nav.desktop a:hover{ opacity: 1; }
+  nav.desktop a:not(.btn):hover{ opacity: 1; }
   .btn{
     display:inline-block;
     font-family: var(--sans); font-weight: 400;
