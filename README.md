@@ -1,4 +1,4 @@
-# Dalos Eszter — mediáció · coaching · konzultáció
+# Dalos Eszter — mediáció · konzultáció
 
 Egyoldalas weboldal Eszter Dalos segítői praxisának: mediáció, coaching, egyéni konzultáció.
 
